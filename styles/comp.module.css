@@ -1,0 +1,10 @@
+.single {
+  padding: 2px 16 px;
+  background: black;
+  display: block;
+  margin: 20px 10 px;
+  border-left: 8px solid black;
+}
+.single:hover {
+  border-left: 8px solid blue;
+}
