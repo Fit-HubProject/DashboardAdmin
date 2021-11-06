@@ -26,7 +26,7 @@ const Recipes = ({recipes}) => {
                 <button className={styles.button}>Delete</button>
                 <button className={styles.button}>Update</button>
             </a>
-            <hr class="dashed"></hr>
+            <hr className="dashed"></hr>
         </div>
     ))}
 </div>
