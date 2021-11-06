@@ -14,13 +14,19 @@ const Recipes = ({recipes}) => {
 <div>
     <h1>All recipes</h1>
     {recipes.map(recipe=>(
-        <div key={recipe.id}>
+        <div key={recipe.id} className={styles.single}>
             <a >
-                <h3>
+                <h3 className={styles.title}>
                     {recipe.recipeTitle}
                 </h3>
-                <h2>{recipe.content}</h2>
+                <h3 className={styles.title1}>
+                   created At :  {recipe.created_at.slice(0,10)}
+                </h3>
+                <h2 className={styles.text}>Content : {recipe.content}</h2>
+                <button className={styles.button}>Delete</button>
+                <button className={styles.button}>Update</button>
             </a>
+            <hr class="dashed"></hr>
         </div>
     ))}
 </div>
