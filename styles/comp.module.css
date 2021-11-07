@@ -17,6 +17,12 @@
   color: #515253;
   text-decoration: none;
 }
+.title2 {
+  color: #515253;
+  text-decoration: none;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .text {
   color: #ffffff;
   text-decoration: none;

@@ -12,7 +12,7 @@ export const getStaticProps = async () =>{
 const Recipes = ({recipes}) => {
     return (
 <div>
-    <h1>All recipes</h1>
+    <h1 className={styles.title2}>All recipes</h1>
     {recipes.map(recipe=>(
         <div key={recipe.id} className={styles.single}>
             <a >
