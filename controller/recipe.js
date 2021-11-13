@@ -52,12 +52,12 @@ const updateRecipebyId = async (req,res)=>{
     const {recipeTitle,created_at,content,imgUrl}=req.body;
     try{let recipeData = await executeQuery(`select * from recipe where id=?`,[id]);
     if (recipeData.length>0){
-        recipeData = await executeQuery (`UPDATE recipe SET recipeTitle=?,created_at=?,content=?,imageUrl=? where id=${id}`,[recipeTitle,created_at,content,imgUrl,id])  
+        recipeData = await executeQuery (`UPDATE recipe SET recipeTitle=?,created_at=?,content=?,imageUrl=? where id=?`,[recipeTitle,created_at,content,imgUrl,id])  
     } 
     else {
    res.status(400).json(`recipe is not found in the id=${id}`);
     }
-    res.send(recipeData)}
+   }
     catch (err){   
         res.status(500).json(err)
             }
