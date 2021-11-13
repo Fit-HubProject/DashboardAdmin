@@ -1,7 +1,7 @@
 import styles from '../../styles/comp.module.css'
 
 export const getStaticProps = async () =>{
-    const res = await fetch ('http://localhost:3000/api/recipe/recipe') ;
+    const res = await fetch ('https://fithub-tn-app.herokuapp.com/recipes') ;
     const data = await res.json();
 
     return {

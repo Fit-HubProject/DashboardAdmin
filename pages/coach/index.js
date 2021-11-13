@@ -1,31 +1,58 @@
 import styles from '../../styles/comp.module.css'
 
 export const getStaticProps = async () =>{
-    const res = await fetch ('https://fithub-tn-app.herokuapp.com/api/user/user') ;
+    const res = await fetch ('https://fithub-tn-app.herokuapp.com/coachs') ;
     const data = await res.json();
 
     return {
-        props :{ users : data } 
+        props :{ coachs : data } 
     }
 }
 
-const Users = ({users}) => {
+const Coachs = ({coachs}) => {
     return (
-<div>
-    <h1>All users</h1>
-    {users.map(user=>(
-        <div key={user.id}>
-            <a >
-                <h3>
-                    {user.userName}
-                </h3>
-                <h2>{user.content}</h2>
-            </a>
-        </div>
-    ))}
+        <div>
+<table id="example" className={styles.tab} >
+    <thead>
+      <tr>
+        <th data-priority="1">Name</th>
+        <th data-priority="2">Rating</th>
+        <th data-priority="3">Price</th>
+        <th data-priority="4">Adress</th>
+        <th data-priority="5">Description</th>
+        <th data-priority="6">ImageUrl</th>
+        <th data-priority="7">Delete</th>
+        <th data-priority="7">Update</th>
+      </tr>
+    </thead>
+    <tbody>
+    {coachs.map(coach=>(
+      <tr key={coach.id}>
+        <td>{coach.coachName} </td>
+        <td> {coach.rating}</td>
+        <td>{coach.price}DT</td>
+        <td>{coach.adress}</td>
+        <td>{coach.description}</td>
+        <td> {coach.imageUrl.slice(0,22)}</td>
+        <td>
+          <div className="relative">
+        <td>
+            <button  >
+       DELETE
+        </button>
+    </td>
+ 
 </div>
-
-
+<hr className="dashed"></hr>
+</td>   <td>
+            <button  >
+      UPDATE
+        </button>
+    </td>
+</tr>))}
+</tbody>
+</table>
+</div>
     )
 }
-export default Users;
+export default Coachs;
