@@ -22,7 +22,7 @@ const Users = ({users}) => {
         <th data-priority="5">Age</th>
         <th data-priority="6">ImageUrl</th>
         <th data-priority="7">Delete</th>
-        <th data-priority="7">Update</th>
+        <th data-priority="8">Update</th>
       </tr>
     </thead>
     <tbody>

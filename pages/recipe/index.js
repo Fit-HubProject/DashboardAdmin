@@ -11,26 +11,46 @@ export const getStaticProps = async () =>{
 
 const Recipes = ({recipes}) => {
     return (
-<div>
-    <h1 className={styles.title2}>All recipes</h1>
-    {recipes.map(recipe=>(
-        <div key={recipe.id} className={styles.single}>
-            <a >
-                <h3 className={styles.title}>
-                    {recipe.recipeTitle}
-                </h3>
-                <h3 className={styles.title1}>
-                   created At :  {recipe.created_at.slice(0,10)}
-                </h3>
-                <h2 className={styles.text}>Content : {recipe.content}</h2>
-                <button className={styles.button}>Delete</button>
-                <button className={styles.button}>Update</button>
-            </a>
-            <hr className="dashed"></hr>
+        <div>
+        <table id="example" className={styles.tab} >
+            <thead>
+              <tr>
+                <th data-priority="1">Recipe Title</th>
+                <th data-priority="2">Ingredients</th>
+                <th data-priority="3">kcal</th>
+                <th data-priority="4">created_at</th>
+                <th data-priority="5">ImageUrl</th>
+                <th data-priority="6">Delete</th>
+                <th data-priority="7">Update</th>
+              </tr>
+            </thead>
+            <tbody>
+            {recipes.map(recipe=>(
+              <tr key={recipe.id}>
+                <td>{recipe.recipeTitle} </td>
+                <td> {recipe.ingredients}</td>
+                <td>{recipe.kcal}</td>
+                <td>{recipe.created_at.slice(0,10)}</td>
+                <td> {recipe.imageUrl}</td>
+                <td>
+                  <div className="relative">
+                <td>
+                    <button  >
+               DELETE
+                </button>
+            </td>
+         
         </div>
-    ))}
-</div>
-
+        <hr className="dashed"></hr>
+        </td>   <td>
+                    <button  >
+              UPDATE
+                </button>
+            </td>
+        </tr>))}
+        </tbody>
+        </table>
+        </div>
 
     )
 }
