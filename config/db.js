@@ -1,8 +1,8 @@
-const {createPool} = require('mysql');
+const {createPool} = require('postresql');
 const pool = createPool ({
 host : 'localhost',
 user : 'root',
-password: 'password',
+password: 'AminoYam',
 port : 3306,
 database : 'fithub-database'
 })
