@@ -165,9 +165,9 @@ export default function Dashboard() {
                                 <Tr>
                                     <Td>
                                         <Flex align="center">
-                                            <Avatar size="sm" mr={2} src="amazon.jpeg" />
+                                            <Avatar size="sm" mr={2} src="blog3.png" />
                                             <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                                                <Heading size="sm" letterSpacing="tight">Blogs</Heading>
                                                 <Text fontSize="sm" color="gray">Apr 24, 2021 at 1:40pm</Text>
                                             </Flex>
                                         </Flex>
@@ -179,9 +179,9 @@ export default function Dashboard() {
                                 <Tr>
                                     <Td>
                                         <Flex align="center">
-                                            <Avatar size="sm" mr={2} src="starbucks.png" />
+                                            <Avatar size="sm" mr={2} src="event3.png" />
                                             <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Starbucks</Heading>
+                                                <Heading size="sm" letterSpacing="tight">Events</Heading>
                                                 <Text fontSize="sm" color="gray">Apr 22, 2021 at 2:43pm</Text>
                                             </Flex>
                                         </Flex>
@@ -193,9 +193,9 @@ export default function Dashboard() {
                                 <Tr>
                                     <Td>
                                         <Flex align="center">
-                                            <Avatar size="sm" mr={2} src="youtube.png" />
+                                            <Avatar size="sm" mr={2} src="coach2.png" />
                                             <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">YouTube</Heading>
+                                                <Heading size="sm" letterSpacing="tight">Coachs</Heading>
                                                 <Text fontSize="sm" color="gray">Apr 13, 2021 at 11:23am</Text>
                                             </Flex>
                                         </Flex>
@@ -209,9 +209,9 @@ export default function Dashboard() {
                                         <Tr>
                                             <Td>
                                                 <Flex align="center">
-                                                    <Avatar size="sm" mr={2} src="amazon.jpeg" />
+                                                    <Avatar size="sm" mr={2} src="healthy3.png" />
                                                     <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Amazon</Heading>
+                                                        <Heading size="sm" letterSpacing="tight">Recipes</Heading>
                                                         <Text fontSize="sm" color="gray">Apr 12, 2021 at 9:40pm</Text>
                                                     </Flex>
                                                 </Flex>
@@ -223,9 +223,9 @@ export default function Dashboard() {
                                         <Tr>
                                             <Td>
                                                 <Flex align="center">
-                                                    <Avatar size="sm" mr={2} src="starbucks.png" />
+                                                    <Avatar size="sm" mr={2} src="resto3.png" />
                                                     <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Starbucks</Heading>
+                                                        <Heading size="sm" letterSpacing="tight">Restaurants</Heading>
                                                         <Text fontSize="sm" color="gray">Apr 10, 2021 at 2:10pm</Text>
                                                     </Flex>
                                                 </Flex>
@@ -237,9 +237,9 @@ export default function Dashboard() {
                                         <Tr>
                                             <Td>
                                                 <Flex align="center">
-                                                    <Avatar size="sm" mr={2} src="youtube.png" />
+                                                    <Avatar size="sm" mr={2} src="gym1.png" />
                                                     <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">YouTube</Heading>
+                                                        <Heading size="sm" letterSpacing="tight">Gyms</Heading>
                                                         <Text fontSize="sm" color="gray">Apr 7, 2021 at 9:03am</Text>
                                                     </Flex>
                                                 </Flex>

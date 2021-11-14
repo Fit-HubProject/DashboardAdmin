@@ -6,6 +6,9 @@ export default function Home() {
   return (
     <div className={styles.container} >
 <div className={styles.title}>
+<Link href='/login'>
+        <a>login</a>
+      </Link>
       <Link href='/dashboard'>
         <a>Dashboard</a>
       </Link>
@@ -32,8 +35,6 @@ export default function Home() {
         <a>Coach</a>
       </Link>
      </div>
-
-
       </div>
   )
 }
