@@ -134,11 +134,7 @@ export default function Dashboard() {
                     Welcome back, <Flex display="inline-flex" fontWeight="bold">Yousfi</Flex>
                 </Heading>
                 // 
-                <div >
-     <Link href='/recipe'>
-       <a>Recipe</a>
-     </Link>
-    </div>
+                
                 //
                 <Text color="gray" fontSize="sm">My Balance</Text>
                 <Text fontWeight="bold" fontSize="2xl">$5,750.20</Text>
@@ -179,6 +175,20 @@ export default function Dashboard() {
                                 <Tr>
                                     <Td>
                                         <Flex align="center">
+                                            <Avatar size="sm" mr={2} src="blog3.png" />
+                                            <Flex flexDir="column">  <Link href='/user'>
+                                                <Heading size="sm" letterSpacing="tight">Users</Heading></Link>
+                                                <Text fontSize="sm" color="gray">Apr 24, 2021 at 1:40pm</Text>
+                                            </Flex>
+                                        </Flex>
+                                    </Td>
+                                    <Td>Account Subscribed</Td>
+                                    <Td isNumeric>+$2</Td>
+                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                                </Tr>
+                                <Tr>
+                                    <Td>
+                                        <Flex align="center">
                                             <Avatar size="sm" mr={2} src="event3.png" />
                                             <Flex flexDir="column">
                                                 <Heading size="sm" letterSpacing="tight">Events</Heading>
@@ -194,8 +204,8 @@ export default function Dashboard() {
                                     <Td>
                                         <Flex align="center">
                                             <Avatar size="sm" mr={2} src="coach2.png" />
-                                            <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Coachs</Heading>
+                                            <Flex flexDir="column">      <Link href='/coach'>
+                                                <Heading size="sm" letterSpacing="tight">Coachs</Heading></Link>
                                                 <Text fontSize="sm" color="gray">Apr 13, 2021 at 11:23am</Text>
                                             </Flex>
                                         </Flex>
@@ -211,7 +221,11 @@ export default function Dashboard() {
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="healthy3.png" />
                                                     <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Recipes</Heading>
+   
+   
+     
+                                                            <Link href='/recipe'>
+                                                        <Heading size="sm" letterSpacing="tight">Recipes</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 12, 2021 at 9:40pm</Text>
                                                     </Flex>
                                                 </Flex>
@@ -238,8 +252,8 @@ export default function Dashboard() {
                                             <Td>
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="gym1.png" />
-                                                    <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Gyms</Heading>
+                                                    <Flex flexDir="column"> <Link href='/gym'>
+                                                        <Heading size="sm" letterSpacing="tight">Gyms</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 7, 2021 at 9:03am</Text>
                                                     </Flex>
                                                 </Flex>
