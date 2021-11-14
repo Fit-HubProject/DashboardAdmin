@@ -23,13 +23,13 @@ export default function Login() {
                     <FormGroup>
                         <FormLabel>Password 
                         <FormControl type="text" placeholder=" password" className="mr-sm-2" />
-                            <Link href="/"><a>Forgot Password?</a></Link></FormLabel>
+                            <Link href="/dashboard"><a>Forgot Password?</a></Link></FormLabel>
                         <FormControl type="password" className="mr-sm-2" />
                     </FormGroup>
                     <Button className="btn-lg btn-block" variant="primary">Sign In</Button>
                 </Form>
             </div>
-        </Layout>
+        </Layout> 
       </>
   )
 }
