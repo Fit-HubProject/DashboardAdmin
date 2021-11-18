@@ -9,6 +9,18 @@ export const getStaticProps = async () =>{
     }
 }
 
+const deleteUserbyId = async id =>{
+  const res = await fetch (`https://fithub-tn-app.herokuapp.com/users/${id}`,{
+    method: 'DELETE'
+  }) ;
+  window.location.reload(true)
+  const data = await res.json();  
+  console.log(data)
+  return {
+    props : {recipes :data }
+  }
+}
+
 const Users = ({users}) => {
     return (
         <div>
@@ -18,10 +30,10 @@ const Users = ({users}) => {
         <th data-priority="1">Last Name</th>
         <th data-priority="2">First Name</th>
         <th data-priority="3">Email</th>
-        <th data-priority="4">registred_at</th>
+        <th data-priority="4">Registred_at</th>
         <th data-priority="5">Age</th>
         <th data-priority="6">ImageUrl</th>
-        <th data-priority="7">Delete</th>
+        <th data-priority="7">Blocked</th>
         <th data-priority="8">Update</th>
       </tr>
     </thead>
@@ -37,17 +49,18 @@ const Users = ({users}) => {
         <td>
           <div className="relative">
         <td>
-            <button  >
-       DELETE
+            <button className={styles.button} onClick={()=>deleteUserbyId(user.id)}>
+            BLOCK
         </button>
     </td>
  
 </div>
 <hr className="dashed"></hr>
-</td>   <td>
-            <button  >
+</td>  
+ <td>
+    <button className={styles.button2}>
       UPDATE
-        </button>
+    </button>
     </td>
 </tr>))}
 </tbody>

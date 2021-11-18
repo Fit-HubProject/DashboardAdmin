@@ -70,7 +70,7 @@ export default function Dashboard() {
                             alignSelf="center"
                             letterSpacing="tight"
                         >
-                           Fit-Hub
+                          <img className="mb-4" alt="" width="200" height="200" src="logoFIHUB.png" />
                         </Heading>
                         <Flex
                             flexDir={["row", "row", "column", "column", "column"]}
@@ -133,16 +133,14 @@ export default function Dashboard() {
                 >
                     Welcome back, <Flex display="inline-flex" fontWeight="bold">Yousfi</Flex>
                 </Heading>
-                // 
-                
-                //
+   
                 <Text color="gray" fontSize="sm">My Balance</Text>
-                <Text fontWeight="bold" fontSize="2xl">$5,750.20</Text>
+                <Text fontWeight="bold" fontSize="2xl">5,750.200DT</Text>
                 <MyChart />
                 <Flex justifyContent="space-between" mt={8}>
                     <Flex align="flex-end">
                         <Heading as="h2" size="lg" letterSpacing="tight">Transactions</Heading>
-                        <Text fontSize="small" color="gray" ml={4}>Apr 2021</Text>
+                        <Text fontSize="small" color="gray" ml={4}>Nov 2021</Text>
                     </Flex>
                     <IconButton icon={<FiCalendar />} />
                 </Flex>
@@ -162,15 +160,15 @@ export default function Dashboard() {
                                     <Td>
                                         <Flex align="center">
                                             <Avatar size="sm" mr={2} src="blog3.png" />
-                                            <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Blogs</Heading>
+                                            <Flex flexDir="column"><Link href='/blogs'>
+                                                <Heading size="sm" letterSpacing="tight">Blogs</Heading></Link>
                                                 <Text fontSize="sm" color="gray">Apr 24, 2021 at 1:40pm</Text>
                                             </Flex>
                                         </Flex>
                                     </Td>
-                                    <Td>Electronic Devices</Td>
-                                    <Td isNumeric>+$2</Td>
-                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                                    <Td>New Blogs</Td>
+                                    <Td isNumeric>+2DT</Td>
+                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-242DT</Text>.00</Td>
                                 </Tr>
                                 <Tr>
                                     <Td>
@@ -183,22 +181,22 @@ export default function Dashboard() {
                                         </Flex>
                                     </Td>
                                     <Td>Account Subscribed</Td>
-                                    <Td isNumeric>+$2</Td>
-                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                                    <Td isNumeric>+2DT</Td>
+                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-242DT</Text>.00</Td>
                                 </Tr>
                                 <Tr>
                                     <Td>
                                         <Flex align="center">
                                             <Avatar size="sm" mr={2} src="event3.png" />
-                                            <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Events</Heading>
+                                            <Flex flexDir="column">  <Link href='/event'>
+                                                <Heading size="sm" letterSpacing="tight">Events</Heading></Link>
                                                 <Text fontSize="sm" color="gray">Apr 22, 2021 at 2:43pm</Text>
                                             </Flex>
                                         </Flex>
                                     </Td>
-                                    <Td>Cafe and restaurant</Td>
-                                    <Td isNumeric>+$23</Td>
-                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$32</Text>.00</Td>
+                                    <Td>New Events</Td>
+                                    <Td isNumeric>+23DT</Td>
+                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-32DT</Text>.00</Td>
                                 </Tr>
                                 <Tr>
                                     <Td>
@@ -211,8 +209,8 @@ export default function Dashboard() {
                                         </Flex>
                                     </Td>
                                     <Td>Social Media</Td>
-                                    <Td isNumeric>+$4</Td>
-                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-$112</Text>.00</Td>
+                                    <Td isNumeric>+4DT</Td>
+                                    <Td isNumeric><Text fontWeight="bold" display="inline-table">-112DT</Text>.00</Td>
                                 </Tr>
                                 {display == 'show' &&
                                     <>
@@ -230,37 +228,37 @@ export default function Dashboard() {
                                                     </Flex>
                                                 </Flex>
                                             </Td>
-                                            <Td>Electronic Devices</Td>
-                                            <Td isNumeric>+$2</Td>
-                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-$242</Text>.00</Td>
+                                            <Td>Cafe and restaurant</Td>
+                                            <Td isNumeric>+2DT</Td>
+                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-242DT</Text>.00</Td>
                                         </Tr>
                                         <Tr>
                                             <Td>
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="resto3.png" />
-                                                    <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Restaurants</Heading>
+                                                    <Flex flexDir="column"><Link href='/restaurant'>
+                                                        <Heading size="sm" letterSpacing="tight">Restaurants</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 10, 2021 at 2:10pm</Text>
                                                     </Flex>
                                                 </Flex>
                                             </Td>
                                             <Td>Cafe and restaurant</Td>
-                                            <Td isNumeric>+$23</Td>
-                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-$32</Text>.00</Td>
+                                            <Td isNumeric>+23DT</Td>
+                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-32DT</Text>.00</Td>
                                         </Tr>
                                         <Tr>
                                             <Td>
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="gym1.png" />
-                                                    <Flex flexDir="column"> <Link href='/gym'>
+                                                    <Flex flexDir="column"> <Link href='/gyms'>
                                                         <Heading size="sm" letterSpacing="tight">Gyms</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 7, 2021 at 9:03am</Text>
                                                     </Flex>
                                                 </Flex>
                                             </Td>
                                             <Td>Social Media</Td>
-                                            <Td isNumeric>+$4</Td>
-                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-$112</Text>.00</Td>
+                                            <Td isNumeric>+4DT</Td>
+                                            <Td isNumeric><Text fontWeight="bold" display="inline-table">-112DT</Text>.00</Td>
                                         </Tr>
                                     </>
                                 }
@@ -300,11 +298,11 @@ export default function Dashboard() {
                         />
                         <Input type="number" placeholder="Search" borderRadius="10px" />
                     </InputGroup>
-                    <IconButton icon={<FiBell />} fontSize="sm" bgColor="#fff" borderRadius="50%" p="10px" />
+                    <IconButton icon={<FiBell />} fontSize="sm" bgColor="#FFFF00" borderRadius="50%" p="10px" />
                     <Flex
                         w={30}
                         h={25}
-                        bgColor="#B57295"
+                        bgColor="#008000"
                         borderRadius="50%"
                         color="#fff"
                         align="center"
@@ -324,13 +322,13 @@ export default function Dashboard() {
                         mt={4}
                         w="100%"
                         h="200px"
-                        bgGradient="linear(to-t, #B57295, #29259A)"
+                        bgGradient="linear(to-t, #FFFF00, #008000)"
                     >
                         <Flex p="1em" color="#fff" flexDir="column" h="100%" justify="space-between">
                             <Flex justify="space-between" w="100%" align="flex-start">
                                 <Flex flexDir="column">
                                     <Text color="gray.400">Current Balance</Text>
-                                    <Text fontWeight="bold" fontSize="xl">$5,750.20</Text>
+                                    <Text fontWeight="bold" fontSize="xl">5,750.200DT</Text>
                                 </Flex>
                                 <Flex align="center">
                                     <Icon mr={2} as={FiCreditCard} />
@@ -366,7 +364,7 @@ export default function Dashboard() {
                             <Flex justify="space-between" w="100%" align="flex-start">
                                 <Flex flexDir="column">
                                     <Text color="gray.400">Current Balance</Text>
-                                    <Text fontWeight="bold" fontSize="xl">$350.00</Text>
+                                    <Text fontWeight="bold" fontSize="xl">350.00DT</Text>
                                 </Flex>
                                 <Flex align="center">
                                     <Icon mr={2} as={FiCreditCard} />
@@ -402,7 +400,7 @@ export default function Dashboard() {
                             <Flex justify="space-between" w="100%" align="flex-start">
                                 <Flex flexDir="column">
                                     <Text color="gray.400">Current Balance</Text>
-                                    <Text fontWeight="bold" fontSize="xl">$2,150.72</Text>
+                                    <Text fontWeight="bold" fontSize="xl">2,150.72DT</Text>
                                 </Flex>
                                 <Flex align="center">
                                     <Icon mr={2} as={FiCreditCard} />
@@ -434,11 +432,11 @@ export default function Dashboard() {
                 <Flex flexDir="column" my={4}>
                     <Flex justify="space-between" mb={2}>
                         <Text>Balance</Text>
-                        <Text fontWeight="bold">$140.42</Text>
+                        <Text fontWeight="bold">140.42DT</Text>
                     </Flex>
                     <Flex justify="space-between">
                         <Text>Credit Limit</Text>
-                        <Text fontWeight="bold">$150.00</Text>
+                        <Text fontWeight="bold">150.00DT</Text>
                     </Flex>
                 </Flex>
                 <Heading letterSpacing="tight" size="md" my={4}>Send money to</Heading>

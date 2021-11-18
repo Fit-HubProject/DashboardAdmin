@@ -112,6 +112,9 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+.head {
+  background-color: grey;
+}
 
 @media (max-width: 600px) {
   .grid {
