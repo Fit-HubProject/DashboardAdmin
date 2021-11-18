@@ -45,6 +45,7 @@
   width: 100%;
   padding-top: 1em;
   padding-bottom: 1em;
+  border-width: 0.5em;
 }
 .head {
   background-color: grey;

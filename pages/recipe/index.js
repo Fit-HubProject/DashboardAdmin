@@ -40,8 +40,8 @@ const Recipes = ({recipes}) => {
     return (
         <div>
         <table id="example" className={styles.tab} >
-            <thead>
-              <tr>
+            <thead >
+              <tr >
                 <th data-priority="1">Recipe Title</th>
                 <th data-priority="2">Ingredients</th>
                 <th data-priority="3">Kcal</th>
@@ -58,7 +58,7 @@ const Recipes = ({recipes}) => {
                 <td> {recipe.ingredients}</td>
                 <td>{recipe.kcal}</td>
                 <td>{recipe.created_at.slice(0,10)}</td>
-                <td> {recipe.imageUrl.slice(0.20)}</td>
+                <td> {recipe.imageUrl.slice(0,15)}</td>
                 <td>
                   <div className="relative">
                 <td>
