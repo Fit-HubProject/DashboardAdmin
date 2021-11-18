@@ -166,7 +166,7 @@ export default function Dashboard() {
                                             </Flex>
                                         </Flex>
                                     </Td>
-                                    <Td>Electronic Devices</Td>
+                                    <Td>New Blogs</Td>
                                     <Td isNumeric>+2DT</Td>
                                     <Td isNumeric><Text fontWeight="bold" display="inline-table">-242DT</Text>.00</Td>
                                 </Tr>
@@ -194,7 +194,7 @@ export default function Dashboard() {
                                             </Flex>
                                         </Flex>
                                     </Td>
-                                    <Td>Cafe and restaurant</Td>
+                                    <Td>New Events</Td>
                                     <Td isNumeric>+23DT</Td>
                                     <Td isNumeric><Text fontWeight="bold" display="inline-table">-32DT</Text>.00</Td>
                                 </Tr>
@@ -228,7 +228,7 @@ export default function Dashboard() {
                                                     </Flex>
                                                 </Flex>
                                             </Td>
-                                            <Td>Electronic Devices</Td>
+                                            <Td>Cafe and restaurant</Td>
                                             <Td isNumeric>+2DT</Td>
                                             <Td isNumeric><Text fontWeight="bold" display="inline-table">-242DT</Text>.00</Td>
                                         </Tr>

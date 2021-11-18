@@ -18,7 +18,7 @@ const Users = ({users}) => {
         <th data-priority="1">Last Name</th>
         <th data-priority="2">First Name</th>
         <th data-priority="3">Email</th>
-        <th data-priority="4">registred_at</th>
+        <th data-priority="4">Registred_at</th>
         <th data-priority="5">Age</th>
         <th data-priority="6">ImageUrl</th>
         <th data-priority="7">Blocked</th>
@@ -37,17 +37,18 @@ const Users = ({users}) => {
         <td>
           <div className="relative">
         <td>
-            <button  >
+            <button className={styles.button} >
             BLOCK
         </button>
     </td>
  
 </div>
 <hr className="dashed"></hr>
-</td>   <td>
-            <button  >
+</td>  
+ <td>
+    <button className={styles.button2}>
       UPDATE
-        </button>
+    </button>
     </td>
 </tr>))}
 </tbody>

@@ -37,7 +37,7 @@ const Restaurants = ({restaurants}) => {
         <td>
           <div className="relative">
         <td>
-            <button  >
+            <button className={styles.button} >
        DELETE
         </button>
     </td>
@@ -45,7 +45,7 @@ const Restaurants = ({restaurants}) => {
 </div>
 <hr className="dashed"></hr>
 </td>   <td>
-            <button  >
+            <button className={styles.button2} >
       UPDATE
         </button>
     </td>

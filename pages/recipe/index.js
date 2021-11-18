@@ -31,8 +31,8 @@ const Recipes = ({recipes}) => {
               <tr>
                 <th data-priority="1">Recipe Title</th>
                 <th data-priority="2">Ingredients</th>
-                <th data-priority="3">kcal</th>
-                <th data-priority="4">created_at</th>
+                <th data-priority="3">Kcal</th>
+                <th data-priority="4">Created_at</th>
                 <th data-priority="5">ImageUrl</th>
                 <th data-priority="6">Delete</th>
                 <th data-priority="7">Update</th>
@@ -49,7 +49,7 @@ const Recipes = ({recipes}) => {
                 <td>
                   <div className="relative">
                 <td>
-                    <button  >
+                    <button className={styles.button} >
                DELETE
                 </button>
             </td>
@@ -57,7 +57,7 @@ const Recipes = ({recipes}) => {
         </div>
         <hr className="dashed"></hr>
         </td>   <td>
-                    <button  >
+                    <button className={styles.button2}  >
               UPDATE
                 </button>
             </td>

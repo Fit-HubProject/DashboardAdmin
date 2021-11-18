@@ -15,11 +15,11 @@ const Blogs = ({blogs}) => {
 <table id="example" className={styles.tab}>
     <thead>
       <tr>
-        <th data-priority="1">blogTitle</th>
-        <th data-priority="2">content</th>
+        <th data-priority="1">BlogTitle</th>
+        <th data-priority="2">Content</th>
         <th data-priority="3">like</th>
-        <th data-priority="4">author</th>
-        <th data-priority="5">date</th>
+        <th data-priority="4">Author</th>
+        <th data-priority="5">Date</th>
         <th data-priority="6">ImageUrl</th>
         <th data-priority="7">Delete</th>
         <th data-priority="7">Update</th>
@@ -37,7 +37,7 @@ const Blogs = ({blogs}) => {
         <td>
           <div className="relative">
         <td>
-            <button  >
+            <button className={styles.button} >
        DELETE
         </button>
     </td>
@@ -45,7 +45,7 @@ const Blogs = ({blogs}) => {
 </div>
 <hr className="dashed"></hr>
 </td>   <td>
-            <button>
+            <button className={styles.button2}>
       UPDATE
         </button>
     </td>
