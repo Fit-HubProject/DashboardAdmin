@@ -324,7 +324,7 @@ export default function Dashboard() {
                         mt={4}
                         w="100%"
                         h="200px"
-                        bgGradient="linear(to-t, #B57295, #29259A)"
+                        bgGradient="linear(to-t, #FFFF00, #008000)"
                     >
                         <Flex p="1em" color="#fff" flexDir="column" h="100%" justify="space-between">
                             <Flex justify="space-between" w="100%" align="flex-start">
