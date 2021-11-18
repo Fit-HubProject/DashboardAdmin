@@ -9,7 +9,19 @@ export const getStaticProps = async () =>{
     }
 }
 
-const Gyms = ({gyms}) => {
+const deleteGymbyId = async id =>{
+    const res = await fetch (`https://fithub-tn-app.herokuapp.com/gyms/${id}`,{
+      method: 'DELETE'
+    }) ;
+    window.location.reload(true)
+    const data = await res.json();  
+    console.log(data)
+    return {
+      props : {recipes :data }
+    }
+  }
+
+  const Gyms = ({gyms}) => {
     return (
         <div>
 <table id="example" className={styles.tab} >
@@ -37,7 +49,7 @@ const Gyms = ({gyms}) => {
         <td>
           <div className="relative">
         <td>
-            <button className={styles.button}  >
+            <button className={styles.button} onClick={()=>deleteGymbyId(gym.id)} >
        DELETE
         </button>
     </td>

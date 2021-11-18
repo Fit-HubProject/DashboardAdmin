@@ -8,6 +8,19 @@ export const getStaticProps = async () =>{
         props :{ recipes : data } 
     }
 }
+
+const deleteRecipebyId = async id =>{
+  const res = await fetch (`https://fithub-tn-app.herokuapp.com/recipes/${id}`,{
+    method: 'DELETE'
+  }) ;
+  window.location.reload(true)
+  const data = await res.json();  
+  console.log(data)
+  return {
+    props : {recipes :data }
+  }
+}
+
 const updateRecipebyId = async (req,res)=>{
   let    id = req.query.id
   const {recipeTitle,ingredients,imgUrl}=req.body;
@@ -45,11 +58,11 @@ const Recipes = ({recipes}) => {
                 <td> {recipe.ingredients}</td>
                 <td>{recipe.kcal}</td>
                 <td>{recipe.created_at.slice(0,10)}</td>
-                <td> {recipe.imageUrl}</td>
+                <td> {recipe.imageUrl.slice(0.20)}</td>
                 <td>
                   <div className="relative">
                 <td>
-                    <button className={styles.button} >
+                    <button className={styles.button} onClick={()=>deleteRecipebyId(recipe.id)}>
                DELETE
                 </button>
             </td>
