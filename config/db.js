@@ -1,10 +1,8 @@
-const {createPool} = require('postresql');
+const {createPool} = require('postgresql');
+const dotenv = require('dotenv')
 const pool = createPool ({
-host : 'localhost',
-user : 'root',
-password: 'AminoYam',
-port : 3306,
-database : 'fithub-database'
+
+DATABASE_URL : process.env.DATABASE_URL
 })
 
 pool.getConnection((err)=>{

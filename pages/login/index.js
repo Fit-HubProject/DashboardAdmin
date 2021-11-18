@@ -1,17 +1,18 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from "../../components/Layout";
-import '../../styles/comp.module.css'
+import '../../styles/Home.module.css'
 import { Form, FormControl, Button, FormLabel, FormGroup } from 'react-bootstrap'
 
 export default function Login() {
   return (
       <>
-        <Head>
+        <Head className="head">
           <title>Login Page</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Layout>
+            <div className="container">
             <div className="login-wrap">
                 <Form className="form-signin">
                     <img className="mb-4" alt="" width="72" height="72" src="logoFIHUB.png" />
@@ -22,12 +23,13 @@ export default function Login() {
                     </FormGroup>
                     <FormGroup>
                         <FormLabel>Password 
-                        <FormControl type="text" placeholder=" password" className="mr-sm-2" />
-                            <Link href="/dashboard"><a>Forgot Password?</a></Link></FormLabel>
+                        <FormControl type="password" placeholder=" password" className="mr-sm-2" />
+                            <Link href="/dashboard"><a>Login         </a></Link></FormLabel>
                         <FormControl type="password" className="mr-sm-2" />
                     </FormGroup>
                     <Button className="btn-lg btn-block" variant="primary">Sign In</Button>
                 </Form>
+            </div>
             </div>
         </Layout> 
       </>

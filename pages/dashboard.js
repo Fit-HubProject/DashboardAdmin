@@ -162,8 +162,8 @@ export default function Dashboard() {
                                     <Td>
                                         <Flex align="center">
                                             <Avatar size="sm" mr={2} src="blog3.png" />
-                                            <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Blogs</Heading>
+                                            <Flex flexDir="column"><Link href='/blogs'>
+                                                <Heading size="sm" letterSpacing="tight">Blogs</Heading></Link>
                                                 <Text fontSize="sm" color="gray">Apr 24, 2021 at 1:40pm</Text>
                                             </Flex>
                                         </Flex>
@@ -190,8 +190,8 @@ export default function Dashboard() {
                                     <Td>
                                         <Flex align="center">
                                             <Avatar size="sm" mr={2} src="event3.png" />
-                                            <Flex flexDir="column">
-                                                <Heading size="sm" letterSpacing="tight">Events</Heading>
+                                            <Flex flexDir="column">  <Link href='/event'>
+                                                <Heading size="sm" letterSpacing="tight">Events</Heading></Link>
                                                 <Text fontSize="sm" color="gray">Apr 22, 2021 at 2:43pm</Text>
                                             </Flex>
                                         </Flex>
@@ -238,8 +238,8 @@ export default function Dashboard() {
                                             <Td>
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="resto3.png" />
-                                                    <Flex flexDir="column">
-                                                        <Heading size="sm" letterSpacing="tight">Restaurants</Heading>
+                                                    <Flex flexDir="column"><Link href='/restaurant'>
+                                                        <Heading size="sm" letterSpacing="tight">Restaurants</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 10, 2021 at 2:10pm</Text>
                                                     </Flex>
                                                 </Flex>
@@ -252,7 +252,7 @@ export default function Dashboard() {
                                             <Td>
                                                 <Flex align="center">
                                                     <Avatar size="sm" mr={2} src="gym1.png" />
-                                                    <Flex flexDir="column"> <Link href='/gym'>
+                                                    <Flex flexDir="column"> <Link href='/gyms'>
                                                         <Heading size="sm" letterSpacing="tight">Gyms</Heading></Link>
                                                         <Text fontSize="sm" color="gray">Apr 7, 2021 at 9:03am</Text>
                                                     </Flex>
