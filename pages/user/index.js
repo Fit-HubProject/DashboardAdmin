@@ -21,7 +21,7 @@ const Users = ({users}) => {
         <th data-priority="4">registred_at</th>
         <th data-priority="5">Age</th>
         <th data-priority="6">ImageUrl</th>
-        <th data-priority="7">Delete</th>
+        <th data-priority="7">Blocked</th>
         <th data-priority="8">Update</th>
       </tr>
     </thead>
@@ -38,7 +38,7 @@ const Users = ({users}) => {
           <div className="relative">
         <td>
             <button  >
-       DELETE
+            BLOCK
         </button>
     </td>
  

@@ -37,16 +37,18 @@ export default function Login() {
             <div className="container">
             <div className="login-wrap">
                 <Form className="form-signin">
-                    <img className="mb-4" alt="" width="72" height="72" src="logoFIHUB.png" />
-                    <Text className="h3 mb-3 font-weight-normal">Please sign in</Text>
+                    <img className="mb-4" alt="" width="200" height="200" src="logoFIHUB.png" />
+                    <Text fontWeight="bold" fontSize="xl" fontFamily="heading">Please sign in</Text>
                     <FormGroup>
-                        <FormLabel>Email</FormLabel>
+                        <Text fontWeight="bold" fontSize="l">Email</Text>
                         <Input type="text" placeholder=" useremail@domain.com" className="mr-sm-2" />
                     </FormGroup>
+                    <Divider/>
                     <FormGroup>
-                        <FormLabel>Password 
+                        <FormLabel>
+                        <Text Text fontWeight="bold" fontSize="l">Password </Text>
                         <Input type="password" placeholder=" password" className="mr-sm-2" />
-                         
+                        <Divider/>
                          <div className="twobtn">   <Link href="/dashboard">
                          <Button className="btn-lg btn-block" variant="primary" bgColor={"green.400"}  >Login</Button></Link> 
                     <Button className="btn-lg btn-block" variant="primary" bgColor={"yellow.400"} >Sign In</Button></div>
