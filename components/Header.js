@@ -6,7 +6,6 @@ const Header = () => (
 <header>
     <Navbar className="Header" >
         <Container className="d-flex justify-content-between px-3">
-            <a href="#" className="navbar-brand d-flex align-items-center py-2">Login</a>
         </Container>
     </Navbar>
 </header>
